@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Your Name / Site Title"
+title                    : "JFO's Personal Website"
 title_separator          : "-"
 name                     : &name "Jean-François Olivieri" # Update this with your name, used in the sidebar and meta tags
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -28,7 +28,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "France"
-  employer         : "Paris-Saclay University,  IUT d'Orsay"
+  employer         : "Paris-Saclay University"
   uri              : # URL
   email            : "jean-francois.olivieri@universite-paris-saclay.fr"
 
@@ -54,7 +54,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -63,7 +63,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : jean-françois-olivieri # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
