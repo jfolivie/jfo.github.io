@@ -13,8 +13,34 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item{% if link.children %} has-dropdown{% endif %}">
+              <a href="{{ domain }}{{ link.url }}">
+                <span class="lang-en">{{ link.title }}</span>
+                {% if link.title_fr %}<span class="lang-fr">{{ link.title_fr }}</span>{% endif %}
+              </a>
+              {% if link.children %}
+                <ul class="dropdown-links">
+                  {% for child in link.children %}
+                    {% if child.url contains 'http' %}
+                      {% assign child_domain = '' %}
+                    {% else %}
+                      {% assign child_domain = base_path %}
+                    {% endif %}
+                    <li><a href="{{ child_domain }}{{ child.url }}">
+                      <span class="lang-en">{{ child.title }}</span>
+                      {% if child.title_fr %}<span class="lang-fr">{{ child.title_fr }}</span>{% endif %}
+                    </a></li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
           {% endfor %}
+          <li id="lang-toggle" class="masthead__menu-item persist tail" style="margin-right: 0.5rem;">
+            <a role="button" aria-label="Toggle language">
+              <span class="lang-en">FR</span>
+              <span class="lang-fr">EN</span>
+            </a>
+          </li>
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>

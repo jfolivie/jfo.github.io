@@ -9,23 +9,45 @@
 
 main:
   - title: "Publications"
+    title_fr: "Publications"
     url: /publications/
 
   - title: "Talks"
-    url: /talks/    
+    title_fr: "Présentations"
+    url: /talks/
 
   - title: "Teaching"
-    url: /teaching/    
-    
-      #- title: "Portfolio"
-      #  url: /portfolio/
-      #      
-      #- title: "Blog Posts"
-      #  url: /year-archive/
-    
+    title_fr: "Enseignement"
+    url: /teaching/
+    children:
+      - title: "2019-2022 Teaching Assistant"
+        title_fr: "2019-2022 Enseignant doctorant"
+        url: /teaching/2019-2022-teaching-assistant/
+      - title: "2022-2026 Teaching Professor"
+        title_fr: "2022-2026 PRAG"
+        url: /teaching/2022-2026-teaching-professor/
+
+  - title: "Research"
+    title_fr: "Recherche"
+    url: /research/
+    children:
+      - title: "Dielectric Constant"
+        title_fr: "Constante diélectrique"
+        url: /research/dielectric-constant/
+      - title: "ARCADE"
+        title_fr: "ARCADE"
+        url: /research/arcade/
+
   - title: "CV"
+    title_fr: "CV"
     url: /cv/
     
+  #- title: "Portfolio"
+  #  url: /portfolio/
+  #      
+  #- title: "Blog Posts"
+  #  url: /year-archive/
+  
   # - title: "CV"
   #   url: /cv-json/
     

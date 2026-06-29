@@ -65,3 +65,15 @@
     font-weight: 700;
   }
 }
+
+/* Language toggle */
+html[data-lang="en"] .lang-fr { display: none; }
+html[data-lang="fr"] .lang-en { display: none; }
+
+#lang-toggle a {
+  font-weight: 600;
+  font-size: 0.85em;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  &:hover { opacity: 1; }
+}
