@@ -67,8 +67,10 @@
 }
 
 /* Language toggle */
-html[data-lang="en"] .lang-fr { display: none; }
+.lang-fr { display: none; }
 html[data-lang="fr"] .lang-en { display: none; }
+html[data-lang="fr"] .lang-fr { display: inherit; }
+html[data-lang="fr"] span.lang-fr { display: inline; }
 
 #lang-toggle a {
   font-weight: 600;
