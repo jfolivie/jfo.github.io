@@ -16,7 +16,7 @@
 </script>
 
 <script>
-  // Set language as early as possible to avoid EN/FR flash.
+  /* Set language as early as possible to avoid EN/FR flash. */
   (function () {
     var lang = 'en';
     try {
@@ -25,7 +25,7 @@
         lang = stored;
       }
     } catch (e) {
-      // localStorage may be blocked in some browsers/privacy modes.
+      /* localStorage may be blocked in some browsers/privacy modes. */
     }
     document.documentElement.setAttribute('data-lang', lang);
   })();
